@@ -7,9 +7,13 @@
  
  iOS 12 includes two new notifications settings:
  
- - Provisional: Trial period for
+ *Provisional Authorization*
  
- - Critical:
+ An optional trial period where users recieve a taste of your app's push notifications before deciding whether to perminately recieve them.
+ 
+ By default,
+ 
+ *Critical Notifications*
  
  Both of these can be set using new `UNAuthorizationOptions` values available on the NotificationCenter [request authorization API method](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649527-requestauthorization):
  ```swift

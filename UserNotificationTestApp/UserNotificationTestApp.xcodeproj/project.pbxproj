@@ -36,7 +36,8 @@
 		BA97DAE120CB281100F86DB4 /* UserNotificationTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserNotificationTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97DAE520CB281100F86DB4 /* UserNotificationTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationTestAppTests.swift; sourceTree = "<group>"; };
 		BA97DAE720CB281100F86DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA97DAF020CB282200F86DB4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BA97DAF020CB282200F86DB4 /* Interactive User Notifications.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Interactive User Notifications.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BA97DAF120CB2C1D00F86DB4 /* Updates to User Notification Settings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Updates to User Notification Settings.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,8 @@
 		BA97DAC420CB281000F86DB4 = {
 			isa = PBXGroup;
 			children = (
-				BA97DAF020CB282200F86DB4 /* MyPlayground.playground */,
+				BA97DAF120CB2C1D00F86DB4 /* Updates to User Notification Settings.playground */,
+				BA97DAF020CB282200F86DB4 /* Interactive User Notifications.playground */,
 				BA97DACF20CB281000F86DB4 /* UserNotificationTestApp */,
 				BA97DAE420CB281100F86DB4 /* UserNotificationTestAppTests */,
 				BA97DACE20CB281000F86DB4 /* Products */,

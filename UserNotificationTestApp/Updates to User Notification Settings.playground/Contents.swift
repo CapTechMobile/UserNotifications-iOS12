@@ -25,7 +25,8 @@
 
  *Implications*
  
- Users often opt out of notifications, not knowing what they are signing up for. This allows users to get a taste for your notifications before being presentied with a choice to accept them on full blast.
+ Users often opt out of notifications, not knowing what they are signing up for. This features allows users to get a taste for your notifications before being presentied with a choice to accept them on full blast.
+ 
  One consideration that you must make when deciding whether to implement this feature is whether users will notification is the amount of time it takes to be prompted for full notifications. It may be easy to ignore notifications in the notification center.
  The types of notifications that you are sending through provisional--if you only send badge or sound, this does not apply
  

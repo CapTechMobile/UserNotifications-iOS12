@@ -5,9 +5,7 @@
  
  ## 1. Provisional & Critical Notifications
  
-Apple introduced Critical Notifications, a way to deliver top priority information to users. If you are numb to the vibration of your phone, from receiving an exhausting amount of notifications, you will appreciate this iOS 12 feature. Critical alerts, such as those about health, safety, and security, will override your phone's quiet settings to make you aware of the notification. These alerts will be loud and clear, and are designed to bypass “Do not Disturb Mode” and silenced phone ringers.
- 
-Wait! Does this mean my dating app notifications will blare out while I’m at church? No, you won’t have to worry about that. Apple has to grant special privileges to apps, and has to consider the information as top priority, to approve notifications of this type. It’s at Apple’s discretion to allow apps to ask users to enroll in Critical Notifications.
+[SUMMARY TODO]
 
 *How Do I Enroll?*
 [link to enroll](https://developer.apple.com/contact/kext/)
@@ -43,8 +41,13 @@ It's "try before you buy". Implimenting this trial period for notifications aims
     - Increase engagement with the content in your app
  
  **Critical Notifications**
+
+Apple introduced Critical Notifications, a way to deliver top priority information to users. If you are numb to the vibration of your phone, from receiving an exhausting amount of notifications, you will appreciate this iOS 12 feature. Critical alerts, such as those about health, safety, and security, will override your phone's quiet settings to make you aware of the notification. These alerts will be loud and clear, and are designed to bypass “Do not Disturb Mode” and silenced phone ringers.
+ 
+Wait! Does this mean my dating app notifications will blare out while I’m at church? No, you won’t have to worry about that. Apple has to grant special privileges to apps, and has to consider the information as top priority, to approve notifications of this type. It’s at Apple’s discretion to allow apps to ask users to enroll in Critical Notifications.
  
  **How Do You Add These to Your App?**
+
  Both of these can be set using new `UNAuthorizationOptions` values available on the NotificationCenter [request authorization API method](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649527-requestauthorization):
  ```swift
  func requestAuthorization(options: UNAuthorizationOptions = [],

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         notificationCenter.delegate = self
         
         // Request authorization.
-        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { _, error in
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .provisional]) { _, error in
             if let error = error {
                 fatalError("failed to get authorization for notifications with \(error)")
             }
@@ -36,6 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // Register for push notifications.
         application.registerForRemoteNotifications()
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Push notifications registration failed with \(error)")
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // Allowing banners to show up in the app.
+        completionHandler(.alert)
     }
 
 

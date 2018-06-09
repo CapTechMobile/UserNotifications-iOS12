@@ -5,15 +5,18 @@
  
  ## 1. Provisional & Critical Notifications
  
-Apple introduced Critical Notifications, a way to deliver top priority information to users. If you are numb to the vibration of your phone, from receiving an exhausting amount of notifications, you will appreciate this iOS 12 feature. Critical alerts, such as those about health, safety, and security, will override your phone's quiet settings to make you aware of the notification. These alerts will be loud and clear, and are designed to bypass “Do not Disturb Mode” and silenced phone ringers.
+Apple introduced Critical Notifications to deliver top priority information to phones. If you are numb to the vibration of your phone, from the exhausting amount of notifications, you will appreciate this iOS 12 feature. Critical alerts, such as those about health, safety, and security, will override your phone's quiet settings, to make users aware of the notification. These alerts are designed to be disruptive. The notification can play custom sounds loudly, and bypass “Do not Disturb Mode” and silenced phone ringers.
  
 Wait! Does this mean my dating app notifications will blare out while I’m at church? No, you won’t have to worry about that. Apple has to grant special privileges to apps, and has to consider the information as top priority, to approve notifications of this type. It’s at Apple’s discretion to allow apps to ask users to enroll in Critical Notifications.
 
-*How Do I Enroll?*
-[link to enroll](https://developer.apple.com/contact/kext/)
-what kind of information-
-Note: you do not need to enroll for testing or personal use
+*How Do I Enroll my App?*
 
+ Note: you do not need to enroll your app for testing or personal use of Critical Notifications.
+ Note: only developer profiles which are assigned the role of Team Agent can request entitlements.
+ 
+ Navigate to the entitlement request page [link] (https://developer.apple.com/contact/kext/). You will then have to provide justification for the use of Critical notifications, including answering: "Which user mode APIs were investigated, and why were they not sufficient?". From there, the request to obtain the certificate will be reviewed by Apple.
+ 
+ 
  
  **Provisional Authorization**
  

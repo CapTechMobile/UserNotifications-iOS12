@@ -13,7 +13,7 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         registerForNotificationsWithApplication(application)
         return true
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Set up categories.
 //        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", options: [])
 
-        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: NSLocalizedString("NOTIF_PREVIEW", comment: "preview"), categorySummaryFormat: NSLocalizedString("NOTIF_SUMMARY", comment: "summary"), options: [])
+        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: NSString.localizedUserNotificationString(forKey: "NOTIF_PREVIEW", arguments: nil), categorySummaryFormat: NSString.localizedUserNotificationString(forKey: "NOTIF_SUMMARY", arguments: nil), options: [])
         notificationCenter.setNotificationCategories([testCategory])
         
         // Register for push notifications.

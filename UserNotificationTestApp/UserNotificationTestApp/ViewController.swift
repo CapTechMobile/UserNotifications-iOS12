@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         content.title = NSLocalizedString("NOTIF_TITLE_\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
         content.body = NSLocalizedString("NOTIF_BODY", comment: "body text")
 //        content.sound = UNNotificationSound.defaultCritical
-//
+
         if let fileURL = Bundle.main.url(forResource:sender == alert1 ? "fluffy": "tiger", withExtension: "jpeg"),
             let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
             content.attachments = [attachment]

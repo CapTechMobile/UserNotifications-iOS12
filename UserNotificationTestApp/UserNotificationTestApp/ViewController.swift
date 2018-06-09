@@ -17,10 +17,10 @@ class ViewController: UIViewController {
         // Set title and subtitle.
         content.title = "ALERT"
         content.body = "Incoming notification coming your way. This is important."
-        content.sound = UNNotificationSound.defaultCritical
+//        content.sound = UNNotificationSound.defaultCritical
         
         // Attach an image.
-        if let fileURL = Bundle.main.url(forResource:"cat", withExtension: "jpg"),
+        if let fileURL = Bundle.main.url(forResource:"cat", withExtension: "jpeg"),
             let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
             content.attachments = [attachment]
         }

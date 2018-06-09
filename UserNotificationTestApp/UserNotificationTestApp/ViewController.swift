@@ -30,9 +30,9 @@ class ViewController: UIViewController {
         }
         content.categoryIdentifier = "testCategory"
         content.threadIdentifier = "messages-from-cats-\(sender.titleLabel!.text!)"
-        content.summaryArgument = NSLocalizedString("NOTIF_TITLE\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
+        content.summaryArgument = NSLocalizedString("NOTIF_TITLE_\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
         // Send notification after 5 seconds.
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         // Set up notification request.
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)

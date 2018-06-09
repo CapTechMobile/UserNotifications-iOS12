@@ -47,7 +47,7 @@ Note: you do not need to enroll for testing or personal use
  
  **How Do You Add These to Your App?**
 
- Both of these can be set using new `UNAuthorizationOptions` values available on the NotificationCenter [request authorization API method](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649527-requestauthorization):
+ Both of these features can be set using new `UNAuthorizationOptions` values available on the NotificationCenter [request authorization API method](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649527-requestauthorization):
  ```swift
  func requestAuthorization(options: UNAuthorizationOptions = [],
     completionHandler: @escaping (Bool, Error?) -> Void)
@@ -61,6 +61,8 @@ Note: you do not need to enroll for testing or personal use
  ```
  
  ## 2. Grouped Notifications
+
+
   _Notes:_ Grouped notifications need to inlcude summary strings, and localiztaion
  
  ## 3. Custom Notification Settings

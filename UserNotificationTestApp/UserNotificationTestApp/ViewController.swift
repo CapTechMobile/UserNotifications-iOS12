@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         guard let sender = sender as? UIButton else { return }
         // Set title and subtitle.
         
-        content.title = NSLocalizedString("NOTIF_TITLE\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
+        content.title = NSLocalizedString("NOTIF_TITLE_\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
         content.body = NSLocalizedString("NOTIF_BODY", comment: "body text")
 //        content.sound = UNNotificationSound.defaultCritical
 //

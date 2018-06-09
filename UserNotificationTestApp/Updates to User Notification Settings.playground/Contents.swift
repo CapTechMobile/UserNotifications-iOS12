@@ -3,9 +3,7 @@
  
  [SUMMARY]
  
- ## 1. Provisional & Critical Notifications
- 
-[SUMMARY TODO]
+ ## 1. Provisional Authorization & Critical Notifications
  
  **Provisional Authorization**
  
@@ -61,6 +59,7 @@ Note: you do not need to enroll for testing or personal use
  ```
  
  ## 2. Grouped Notifications
+
 
 
   _Notes:_ Grouped notifications need to inlcude summary strings, and localiztaion

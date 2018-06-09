@@ -13,7 +13,8 @@
 		BA97DAD820CB281100F86DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAD720CB281100F86DB4 /* Assets.xcassets */; };
 		BA97DADB20CB281100F86DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAD920CB281100F86DB4 /* LaunchScreen.storyboard */; };
 		BA97DAE620CB281100F86DB4 /* UserNotificationTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97DAE520CB281100F86DB4 /* UserNotificationTestAppTests.swift */; };
-		BA97DAF320CC2ADC00F86DB4 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAF220CC2ADC00F86DB4 /* cat.jpeg */; };
+		BA97DAF320CC2ADC00F86DB4 /* fluffy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */; };
+		BA97DAF520CC338A00F86DB4 /* tiger.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAF420CC338A00F86DB4 /* tiger.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,8 @@
 		BA97DAE120CB281100F86DB4 /* UserNotificationTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserNotificationTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97DAE520CB281100F86DB4 /* UserNotificationTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationTestAppTests.swift; sourceTree = "<group>"; };
 		BA97DAE720CB281100F86DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA97DAF220CC2ADC00F86DB4 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
+		BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fluffy.jpeg; sourceTree = "<group>"; };
+		BA97DAF420CC338A00F86DB4 /* tiger.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 		BA97DACF20CB281000F86DB4 /* UserNotificationTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				BA97DAF220CC2ADC00F86DB4 /* cat.jpeg */,
+				BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */,
+				BA97DAF420CC338A00F86DB4 /* tiger.jpeg */,
 				BA97DAD020CB281000F86DB4 /* AppDelegate.swift */,
 				BA97DAD220CB281000F86DB4 /* ViewController.swift */,
 				BA97DAD420CB281000F86DB4 /* Main.storyboard */,
@@ -180,9 +183,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA97DAF320CC2ADC00F86DB4 /* cat.jpeg in Resources */,
+				BA97DAF320CC2ADC00F86DB4 /* fluffy.jpeg in Resources */,
 				BA97DADB20CB281100F86DB4 /* LaunchScreen.storyboard in Resources */,
 				BA97DAD820CB281100F86DB4 /* Assets.xcassets in Resources */,
+				BA97DAF520CC338A00F86DB4 /* tiger.jpeg in Resources */,
 				BA97DAD620CB281000F86DB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

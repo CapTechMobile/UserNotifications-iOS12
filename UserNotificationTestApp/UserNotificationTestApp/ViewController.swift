@@ -10,17 +10,20 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var alert1: UIButton!
+    @IBOutlet weak var alert2: UIButton!
 
     @IBAction func sendLocalNotificationWithAttachment(_ sender: Any) {
         let content = UNMutableNotificationContent()
         
+        guard let sender = sender as? UIButton else { return }
         // Set title and subtitle.
-        content.title = "ALERT"
+        content.title = sender == alert1 ? "Fluffy": "Tiger"
         content.body = "Incoming notification coming your way. This is important."
 //        content.sound = UNNotificationSound.defaultCritical
         
-        // Attach an image.
-        if let fileURL = Bundle.main.url(forResource:"cat", withExtension: "jpeg"),
+        if let fileURL = Bundle.main.url(forResource:sender == alert1 ? "fluffy": "tiger", withExtension: "jpeg"),
             let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
             content.attachments = [attachment]
         }

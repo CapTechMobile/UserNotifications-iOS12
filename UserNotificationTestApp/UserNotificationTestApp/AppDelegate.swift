@@ -24,14 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         notificationCenter.delegate = self
         
         // Request authorization.
-        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .provisional]) { _, error in
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .criticalAlert]) { _, error in
             if let error = error {
                 fatalError("failed to get authorization for notifications with \(error)")
             }
         }
         
         // Set up categories.
-        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", options: [])
+//        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", options: [])
+        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", categorySummaryFormat: "There are %u notifications about %@", options: [])
         notificationCenter.setNotificationCategories([testCategory])
         
         // Register for push notifications.
@@ -46,7 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Allowing banners to show up in the app.
         completionHandler(.alert)
     }
-
-
 }
 

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         notificationCenter.delegate = self
         
         // Request authorization.
-        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .criticalAlert]) { _, error in
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .provisional]) { _, error in
             if let error = error {
                 fatalError("failed to get authorization for notifications with \(error)")
             }
@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // Set up categories.
 //        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", options: [])
-        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", categorySummaryFormat: "There are %u notifications about %@", options: [])
+
+        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: NSLocalizedString("NOTIF_PREVIEW", comment: "preview"), categorySummaryFormat: NSLocalizedString("NOTIF_SUMMARY", comment: "summary"), options: [])
         notificationCenter.setNotificationCategories([testCategory])
         
         // Register for push notifications.

@@ -1,0 +1,11 @@
+/* 
+  CatStrings.strings
+  UserNotificationTestApp
+
+  Created by Ragan Walker on 6/9/18.
+  Copyright © 2018 SillyRags. All rights reserved.
+*/
+"NOTIF_TITLE_FLUFFY" = "Fluffy";
+"NOTIF_TITLE_TIGER" = "Tiger";
+
+"NOTIF_BODY" = "Incoming notification. This is important";

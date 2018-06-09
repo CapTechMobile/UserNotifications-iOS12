@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA86A84D20CC4D4B00B69D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA86A84C20CC4D4B00B69D98 /* Localizable.strings */; };
+		BA86A84F20CC4DCE00B69D98 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */; };
 		BA97DAD120CB281000F86DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97DAD020CB281000F86DB4 /* AppDelegate.swift */; };
 		BA97DAD320CB281000F86DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97DAD220CB281000F86DB4 /* ViewController.swift */; };
 		BA97DAD620CB281000F86DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAD420CB281000F86DB4 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA86A84C20CC4D4B00B69D98 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		BA97DACD20CB281000F86DB4 /* UserNotificationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotificationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97DAD020CB281000F86DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA97DAD220CB281000F86DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		BA97DAE720CB281100F86DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fluffy.jpeg; sourceTree = "<group>"; };
 		BA97DAF420CC338A00F86DB4 /* tiger.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpeg; sourceTree = "<group>"; };
+		BA97DAF620CC352300F86DB4 /* Interactive User Notifications.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Interactive User Notifications.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA86A85020CC508300B69D98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */,
+				BA97DAF420CC338A00F86DB4 /* tiger.jpeg */,
+				BA86A84C20CC4D4B00B69D98 /* Localizable.strings */,
+				BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BA97DAC420CB281000F86DB4 = {
 			isa = PBXGroup;
 			children = (
+				BA97DAF620CC352300F86DB4 /* Interactive User Notifications.playground */,
 				BA97DACF20CB281000F86DB4 /* UserNotificationTestApp */,
 				BA97DAE420CB281100F86DB4 /* UserNotificationTestAppTests */,
 				BA97DACE20CB281000F86DB4 /* Products */,
@@ -81,14 +98,13 @@
 		BA97DACF20CB281000F86DB4 /* UserNotificationTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				BA97DAF220CC2ADC00F86DB4 /* fluffy.jpeg */,
-				BA97DAF420CC338A00F86DB4 /* tiger.jpeg */,
+				BA97DADC20CB281100F86DB4 /* Info.plist */,
+				BA86A85020CC508300B69D98 /* Supporting Files */,
 				BA97DAD020CB281000F86DB4 /* AppDelegate.swift */,
 				BA97DAD220CB281000F86DB4 /* ViewController.swift */,
 				BA97DAD420CB281000F86DB4 /* Main.storyboard */,
 				BA97DAD720CB281100F86DB4 /* Assets.xcassets */,
 				BA97DAD920CB281100F86DB4 /* LaunchScreen.storyboard */,
-				BA97DADC20CB281100F86DB4 /* Info.plist */,
 			);
 			path = UserNotificationTestApp;
 			sourceTree = "<group>";
@@ -185,8 +201,10 @@
 			files = (
 				BA97DAF320CC2ADC00F86DB4 /* fluffy.jpeg in Resources */,
 				BA97DADB20CB281100F86DB4 /* LaunchScreen.storyboard in Resources */,
+				BA86A84D20CC4D4B00B69D98 /* Localizable.strings in Resources */,
 				BA97DAD820CB281100F86DB4 /* Assets.xcassets in Resources */,
 				BA97DAF520CC338A00F86DB4 /* tiger.jpeg in Resources */,
+				BA86A84F20CC4DCE00B69D98 /* Localizable.stringsdict in Resources */,
 				BA97DAD620CB281000F86DB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

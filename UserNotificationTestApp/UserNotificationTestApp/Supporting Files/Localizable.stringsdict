@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOTIF_SUMMARY</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@notification@</string>
+		<key>notification</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>%u Additional Notification From %@</string>
+			<key>other</key>
+			<string>%u Additional Notifications From %@</string>
+		</dict>
+	</dict>
+	<key>NOTIF_PREVIEW</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@preview@</string>
+		<key>preview</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>You&apos;ve received %u notification</string>
+			<key>other</key>
+			<string>You&apos;ve received %u notifications</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

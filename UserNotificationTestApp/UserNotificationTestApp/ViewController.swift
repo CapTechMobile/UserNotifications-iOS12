@@ -19,16 +19,18 @@ class ViewController: UIViewController {
         
         guard let sender = sender as? UIButton else { return }
         // Set title and subtitle.
-        content.title = sender == alert1 ? "Fluffy": "Tiger"
-        content.body = "Incoming notification coming your way. This is important."
-//        content.sound = UNNotificationSound.defaultCritical
         
+        content.title = NSLocalizedString("NOTIF_TITLE\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
+        content.body = NSLocalizedString("NOTIF_BODY", comment: "body text")
+//        content.sound = UNNotificationSound.defaultCritical
+//
         if let fileURL = Bundle.main.url(forResource:sender == alert1 ? "fluffy": "tiger", withExtension: "jpeg"),
             let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
             content.attachments = [attachment]
         }
         content.categoryIdentifier = "testCategory"
-        
+        content.threadIdentifier = "messages-from-cats-\(sender.titleLabel!.text!)"
+        content.summaryArgument = NSLocalizedString("NOTIF_TITLE\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
         // Send notification after 5 seconds.
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         

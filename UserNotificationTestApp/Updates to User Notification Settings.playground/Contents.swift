@@ -30,13 +30,17 @@ Note: you do not need to enroll for testing or personal use
 - The length of the trial period for notificaitons is determined by the system
 - At the end of the trial period, users will be prompted to accept regular notifications on app launch if they haven't already accepted through a "quiet" notification
 
- *Implications*
- 
- Users often opt out of notifications, not knowing what they are signing up for. This features allows users to get a taste for your notifications before being presentied with a choice to accept them on full blast.
+ *Considerations*
  
  One consideration that you might make when deciding whether to implement this feature is the importance of your notificaitons. Notifications sent under provisional authorization will present quietly until the user opts in or the tiral period ends, so if you have notifications that you feel need to draw closer attention, you may consider requesting the user opt in immediately.
 
 Another consideration is the type of notifications that you are sending through provisional--if you only send badge or sound, this does not apply.
+
+*Why Should I Use Provisional Authorization?*
+
+It's "try before you buy". Implimenting this trial period for notifications aims to:
+    - Elimiate the subset of users that automatically deny notifications on app launch, not knowing how they will enrich their user experience
+    - Increase engagement with the content in your app
  
  **Critical Notifications**
  

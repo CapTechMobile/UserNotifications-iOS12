@@ -29,9 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 fatalError("failed to get authorization for notifications with \(error)")
             }
         }
-        
-        // Set up categories.
-//        let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "You've received %u notifications", options: [])
 
         let testCategory = UNNotificationCategory(identifier: "testCategory", actions: [], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: NSString.localizedUserNotificationString(forKey: "NOTIF_PREVIEW", arguments: nil), categorySummaryFormat: NSString.localizedUserNotificationString(forKey: "NOTIF_SUMMARY", arguments: nil), options: [])
         notificationCenter.setNotificationCategories([testCategory])

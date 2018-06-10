@@ -23,16 +23,16 @@ class ViewController: UIViewController {
         if sender == alert1 { //RETAIL ALERT
             //JORGE: TODO
             content.configure(LocalizedContentConfiguration(
-                title: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
-                body: NSLocalizedString("NOTIF_BODY", comment: "body text"),
+                title: NSLocalizedString("NOTIF_TITLE_RETAIL", comment: "banking"),
+                body: NSLocalizedString("NOTIF_BODY_RETAIL", comment: "body text"),
                 category: "testCategory",
                 identifier: "banking-transfer-notifications",
-                summaryArg: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
+                summaryArg: NSLocalizedString("NOTIF_TITLE_RETAIL", comment: "banking"),
                 summaryCount: nil))
         } else { //BANKING ALERT
             content.configure(LocalizedContentConfiguration(
                 title: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
-                body: NSLocalizedString("NOTIF_BODY", comment: "body text"),
+                body: NSLocalizedString("NOTIF_BODY_BANKING", comment: "body text"),
                 category: "testCategory",
                 identifier: "banking-transfer-notifications",
                 summaryArg: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),

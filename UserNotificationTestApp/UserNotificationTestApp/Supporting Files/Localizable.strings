@@ -5,7 +5,8 @@
   Created by Ragan Walker on 6/9/18.
   Copyright © 2018 SillyRags. All rights reserved.
 */
-"NOTIF_TITLE_FLUFFY" = "Fluffy";
-"NOTIF_TITLE_TIGER" = "Tiger";
+"NOTIF_TITLE_BANKING" = "Upcoming Transfer";
+"NOTIF_BODY_BANKING" = "Transfer to account ****1234 will post in 3 days.";
 
-"NOTIF_BODY" = "Incoming notification. This is important";
+"NOTIF_TITLE_RETAIL" = "Tiger";
+"NOTIF_BODY_RETAIL" = "Incoming notification. This is important";

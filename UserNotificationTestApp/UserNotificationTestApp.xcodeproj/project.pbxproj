@@ -77,6 +77,20 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BA86A85220CD614200B69D98 /* Retail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Retail;
+			sourceTree = "<group>";
+		};
+		BA86A85320CD615600B69D98 /* Banking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Banking;
+			sourceTree = "<group>";
+		};
 		BA97DAC420CB281000F86DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,8 @@
 				BA97DAD020CB281000F86DB4 /* AppDelegate.swift */,
 				BA97DAD220CB281000F86DB4 /* ViewController.swift */,
 				BA97DAD420CB281000F86DB4 /* Main.storyboard */,
+				BA86A85320CD615600B69D98 /* Banking */,
+				BA86A85220CD614200B69D98 /* Retail */,
 				BA97DAD720CB281100F86DB4 /* Assets.xcassets */,
 				BA97DAD920CB281100F86DB4 /* LaunchScreen.storyboard */,
 			);

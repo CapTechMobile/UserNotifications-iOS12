@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		BA86A84C20CC4D4B00B69D98 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		BA86A85120CC7BCA00B69D98 /* UserNotificationTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserNotificationTestApp.entitlements; sourceTree = "<group>"; };
 		BA97DACD20CB281000F86DB4 /* UserNotificationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotificationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97DAD020CB281000F86DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA97DAD220CB281000F86DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		BA97DACF20CB281000F86DB4 /* UserNotificationTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				BA86A85120CC7BCA00B69D98 /* UserNotificationTestApp.entitlements */,
 				BA97DADC20CB281100F86DB4 /* Info.plist */,
 				BA86A85020CC508300B69D98 /* Supporting Files */,
 				BA97DAD020CB281000F86DB4 /* AppDelegate.swift */,
@@ -168,6 +170,11 @@
 				TargetAttributes = {
 					BA97DACC20CB281000F86DB4 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BA97DAE020CB281100F86DB4 = {
 						CreatedOnToolsVersion = 10.0;
@@ -384,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UserNotificationTestApp/UserNotificationTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJVNJ6YY3D;
 				INFOPLIST_FILE = UserNotificationTestApp/Info.plist;
@@ -402,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UserNotificationTestApp/UserNotificationTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJVNJ6YY3D;
 				INFOPLIST_FILE = UserNotificationTestApp/Info.plist;

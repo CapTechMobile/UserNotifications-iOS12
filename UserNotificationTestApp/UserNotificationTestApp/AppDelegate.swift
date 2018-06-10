@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         notificationCenter.delegate = self
         
         // Request authorization.
-        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .provisional]) { _, error in
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .providesAppNotificationSettings]) { _, error in
             if let error = error {
                 fatalError("failed to get authorization for notifications with \(error)")
             }
@@ -47,6 +47,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         // Allowing banners to show up in the app.
         completionHandler(.alert)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        /*
+         Note: the value of notification will be nil, if the deep link from the Settings app was tapped.
+         Otherwise, it will contain a value.
+         */
+        
+        // route user to the view controller which contains your settings
+        let settingsViewController = UIViewController()
+        settingsViewController.view.backgroundColor = .blue
+        self.window?.rootViewController = settingsViewController
     }
 }
 

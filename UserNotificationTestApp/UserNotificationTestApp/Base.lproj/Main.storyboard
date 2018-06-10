@@ -18,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-ks-D1e">
-                                <rect key="frame" x="131.5" y="313.5" width="112" height="60"/>
+                                <rect key="frame" x="141.5" y="313.5" width="92" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ost-tz-FDU" userLabel="Alert from Fluffy">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
-                                        <state key="normal" title="Alert from Fluffy"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                                        <state key="normal" title="Retail Alert"/>
                                         <connections>
                                             <action selector="sendLocalNotificationWithAttachment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4y-yb-8cc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX8-pa-yZv" userLabel="Alert from Tiger">
-                                        <rect key="frame" x="0.0" y="30" width="112" height="30"/>
-                                        <state key="normal" title="Alert from Tiger"/>
+                                        <rect key="frame" x="0.0" y="30" width="92" height="30"/>
+                                        <state key="normal" title="Banking Alert"/>
                                         <connections>
                                             <action selector="sendLocalNotificationWithAttachment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnh-6i-1qa"/>
                                         </connections>

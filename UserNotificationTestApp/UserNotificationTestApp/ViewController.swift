@@ -11,26 +11,48 @@ import UserNotifications
 
 class ViewController: UIViewController {
     
+    fileprivate struct LocalizedContentConfiguration {
+        let title: String
+        let body: String
+        let category: String
+        let identifier: String
+        let summaryArg: String
+        let summaryCount: Int?
+    }
+    
     @IBOutlet weak var alert1: UIButton!
     @IBOutlet weak var alert2: UIButton!
 
     @IBAction func sendLocalNotificationWithAttachment(_ sender: Any) {
-        let content = UNMutableNotificationContent()
         
         guard let sender = sender as? UIButton else { return }
         // Set title and subtitle.
         
-        content.title = NSLocalizedString("NOTIF_TITLE_\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
-        content.body = NSLocalizedString("NOTIF_BODY", comment: "body text")
-//        content.sound = UNNotificationSound.defaultCritical
-
-        if let fileURL = Bundle.main.url(forResource:sender == alert1 ? "fluffy": "tiger", withExtension: "jpeg"),
-            let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
-            content.attachments = [attachment]
+        var content: UNMutableNotificationContent!
+        if sender == alert1 { //RETAIL ALERT
+            //JORGE: TODO
+            content = self.configure(LocalizedContentConfiguration(
+                title: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
+                body: NSLocalizedString("NOTIF_BODY", comment: "body text"),
+                category: "testCategory",
+                identifier: "banking-transfer-notifications",
+                summaryArg: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
+                summaryCount: nil))
+        } else { //BANKING ALERT
+            content = self.configure(LocalizedContentConfiguration(
+                title: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
+                body: NSLocalizedString("NOTIF_BODY", comment: "body text"),
+                category: "testCategory",
+                identifier: "banking-transfer-notifications",
+                summaryArg: NSLocalizedString("NOTIF_TITLE_BANKING", comment: "banking"),
+                summaryCount: nil))
+            
+            if let fileURL = Bundle.main.url(forResource:sender == alert1 ? "fluffy": "tiger", withExtension: "jpeg"),
+                let attachment = try? UNNotificationAttachment(identifier: "localAttachment", url: fileURL, options: nil) {
+                content.attachments = [attachment]
+            }
         }
-        content.categoryIdentifier = "testCategory"
-        content.threadIdentifier = "messages-from-cats-\(sender.titleLabel!.text!)"
-        content.summaryArgument = NSLocalizedString("NOTIF_TITLE_\(sender == alert1 ? "FLUFFY": "TIGER")", comment: "cat name")
+
         // Send notification after 5 seconds.
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
@@ -44,6 +66,19 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    fileprivate func configure(_ configuration: LocalizedContentConfiguration) -> UNMutableNotificationContent {
+        let content = UNMutableNotificationContent()
+        content.title = configuration.title
+        content.body = configuration.body
+        content.categoryIdentifier = configuration.category
+        content.threadIdentifier = configuration.identifier
+        content.summaryArgument = configuration.summaryArg
+        
+        if let summaryCount = configuration.summaryCount {
+            content.summaryArgumentCount = summaryCount
+        }
+        return content
+    }
 }
 

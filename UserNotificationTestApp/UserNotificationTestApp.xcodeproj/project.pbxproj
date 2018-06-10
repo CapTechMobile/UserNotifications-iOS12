@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA86A84D20CC4D4B00B69D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA86A84C20CC4D4B00B69D98 /* Localizable.strings */; };
 		BA86A84F20CC4DCE00B69D98 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */; };
+		BA86A85520CD68E400B69D98 /* EditTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86A85420CD68E400B69D98 /* EditTransferViewController.swift */; };
 		BA97DAD120CB281000F86DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97DAD020CB281000F86DB4 /* AppDelegate.swift */; };
 		BA97DAD320CB281000F86DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97DAD220CB281000F86DB4 /* ViewController.swift */; };
 		BA97DAD620CB281000F86DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA97DAD420CB281000F86DB4 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		BA86A84C20CC4D4B00B69D98 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BA86A84E20CC4DCE00B69D98 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		BA86A85120CC7BCA00B69D98 /* UserNotificationTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserNotificationTestApp.entitlements; sourceTree = "<group>"; };
+		BA86A85420CD68E400B69D98 /* EditTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTransferViewController.swift; sourceTree = "<group>"; };
 		BA97DACD20CB281000F86DB4 /* UserNotificationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotificationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97DAD020CB281000F86DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA97DAD220CB281000F86DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		BA86A85320CD615600B69D98 /* Banking */ = {
 			isa = PBXGroup;
 			children = (
+				BA86A85420CD68E400B69D98 /* EditTransferViewController.swift */,
 			);
 			path = Banking;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				BA97DAD320CB281000F86DB4 /* ViewController.swift in Sources */,
 				BA97DAD120CB281000F86DB4 /* AppDelegate.swift in Sources */,
+				BA86A85520CD68E400B69D98 /* EditTransferViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
